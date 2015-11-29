@@ -1,9 +1,9 @@
 package $package$
 
 import org.rogach.scallop._
-import com.typesafe.scalalogging.slf4j.Logging
+import com.typesafe.scalalogging.StrictLogging
 
-object $name;format="Camel"$ extends App with Logging {
+object $name;format="Camel"$ extends App with StrictLogging {
 
   object Args extends ScallopConf(args) {
     val param = opt[String]("param", default=Some("default"), descr="This is an example parameter")
